@@ -1,0 +1,37 @@
+<script>
+
+function myExampleFunction(){
+   let myIn01 = parseInt(document.getElementById('myText01').value)
+   let mySum = myIn01 + myIn01
+   let myReply  = myIn01 + ' + ' + myIn01 + ' = ' + mySum
+ 
+ }
+ 
+ </scrip>
+ 
+ Version 0.0.1
+ 
+ <h2 align=center>t3a09-functions-by-mohid.hmtl</h2>
+ 
+ <a href="https://wwww.w3schools.com/js/js_functions.asp">
+ Good refrence</a><br>
+ 
+ Function are used to sensibly organize code. Then they are "Called" elsewhere. Information
+ can also be passed to functions (more advanced).
+ 
+ <h4 Example function code</h4>
+ <pre>
+ function myGrabNumber(){
+    return parseInt(document.getElementById('myText01').value)
+}
+</pre>
+
+<h4> Example working code </h4>
+
+<input type=text id="myText01" value="3"><br>
+
+<input type=button value"Function example" onClick"{
+  document.getElementById('myDiv01').innerHTML = myExampleFunction()
+  }">
+  
+  <div id="myDiv01">...</div>
