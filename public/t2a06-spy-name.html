@@ -1,5 +1,5 @@
 <h1 align=center>t2a06-spy-name.html</h1>
-<textarea id="myArea01" rows=4 cols=70>Hello how are you</textarea><br> 
+<textarea id="myArea01" rows=4 cols=70>The quick brown fox jumped over the lazy dog</textarea><br> 
 
 
 <input type=button value="encrypt" onclick="{
@@ -9,9 +9,45 @@
       myTemp = myString[myLoop]
       if (myString[myLoop] == 'e') {myTemp  = 'f'} 
       if (myString[myLoop] == 'h') {myTemp  = 'i'} 
+      if (myString[myLoop] == 'q') {myTemp  = 'z'}
+      if (myString[myLoop] == 't') {myTemp  = 'y'}
+      if (myString[myLoop] == 'p') {myTemp  = 'x'}
+      if (myString[myLoop] == 'n') {myTemp  = 'o'}
+      if (myString[myLoop] == 'c') {myTemp  = 'l'}
+      if (myString[myLoop] == 'd') {myTemp  = 's'}
+      if (myString[myLoop] == 'a') {myTemp  = 'b'}
+      if (myString[myLoop] == 'v') {myTemp  = 'j'} 
+      if (myString[myLoop] == 'u') {myTemp  = 'm'}
+      if (myString[myLoop] == 'g') {myTemp  = 'i'}
+      if (myString[myLoop] == 'w') {myTemp  = 'k'}
+      if (myString[myLoop] == 'r') {myTemp  = '7'} 
       myString[myLoop] = myTemp
    }
    document.getElementById('myArea02').value = myString.join('')
+}"><br><br>
+
+<input type=button value="encrypt" onclick="{
+   let myTemp = ''
+   myString = document.getElementById('myArea02').value.toLowerCase().split('')
+   for (let myLoop=0;   myLoop < myString.length; myLoop++){
+      myTemp = myString[myLoop]
+      if (myString[myLoop] == 'f') {myTemp  = 'e'} 
+      if (myString[myLoop] == 'i') {myTemp  = 'h'} 
+      if (myString[myLoop] == 'z') {myTemp  = 'q'}
+      if (myString[myLoop] == 'y') {myTemp  = 't'}
+      if (myString[myLoop] == 'x') {myTemp  = 'p'}
+      if (myString[myLoop] == 'o') {myTemp  = 'n'}
+      if (myString[myLoop] == 'l') {myTemp  = 'c'}
+      if (myString[myLoop] == 's') {myTemp  = 'd'}
+      if (myString[myLoop] == 'b') {myTemp  = 'a'}
+      if (myString[myLoop] == 'j') {myTemp  = 'v'} 
+      if (myString[myLoop] == 'm') {myTemp  = 'u'}
+      if (myString[myLoop] == 'i') {myTemp  = 'g'}
+      if (myString[myLoop] == 'k') {myTemp  = 'w'}
+      if (myString[myLoop] == '7') {myTemp  = 'r'} 
+      myString[myLoop] = myTemp
+   }
+   document.getElementById('myArea03').value = myString.join('')
 }"><br><br>
 
 
