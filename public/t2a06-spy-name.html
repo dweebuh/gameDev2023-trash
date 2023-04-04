@@ -26,7 +26,11 @@
    document.getElementById('myArea02').value = myString.join('')
 }"><br><br>
 
-<input type=button value="encrypt" onclick="{
+
+
+<textarea id="myArea02" rows=4 cols=70></textarea><br> 
+
+<input type=button value="decrypt" onclick="{
    let myTemp = ''
    myString = document.getElementById('myArea02').value.toLowerCase().split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
@@ -48,14 +52,6 @@
       myString[myLoop] = myTemp
    }
    document.getElementById('myArea03').value = myString.join('')
-}"><br><br>
-
-
-
-<textarea id="myArea02" rows=4 cols=70></textarea><br> 
-
-<input type=button value="decrypt" onclick="{
-   alert('Sorry, you have to do this!')
 }"><br><br>
 
 
