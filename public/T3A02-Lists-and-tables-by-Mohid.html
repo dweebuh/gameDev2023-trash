@@ -2,46 +2,74 @@
 
 <h1 align=center>T3A02-Lists-and-tables-by-Mohid</h1>
 
-<h2 Lists</h2>
+<h2>Lists</h2>
 
-<ol> Orderest list of fav foods (At least 5)
-  <li>Pizza
-  <li>Burgers
-  <li>Salad
-  <li>Pastery
-  <li>Noodles
-  </ol>
+<ol> 
+  <li>Favourite Foods (At least 5)
+    <ol>
+      <li>Pizza</li>
+      <li>Burgers</li>
+      <li>Salad</li>
+      <li>Pastery</li>
+      <li>Noodles</li>
+    </ol>
+  </li>
+</ol>
 
-<ul> Unordered list of Countries (at least 5)
-  <li>Canada
-  <li>Frace
+<ul> 
+  <li>Countries (At least 5)
+    <ul>
+      <li>Canada</li>
+      <li>France</li>
+      <li>Japan</li>
+      <li>South Africa</li>
+      <li>Australia</li>
+    </ul>
+  </li>
 </ul>
 
-<b>Assigment</b>. You make a list a inside of
-multiple items<br>
+<b>Assignment:</b> Create a nested list with multiple items.<br>
+<ol>
 
-<h2> Tables</h2>
+<h2>Tables</h2>
 
-<table border=1>
-  <tr><td>A</td><td>B</td></tr>
-  <tr><td>1</td><td>2</td></tr>
+<table border="1">
+  <tr>
+    <td>A</td>
+    <td>B</td>
+    <td>C</td>
+    <td>D</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+  </tr>
 </table><br>
 
-<b>Assignment</b> Make a 3x 4 table,
-then make a link and image with border = 0<br><br><br>
+<b>Assignment:</b> Create a hyperlink and an image with border = 0<br><br>
+
+<a href="https://www.google.com" target="_blank"><img src="https://via.placeholder.com/150x50" border="0"></a>
 
 <h2>Advanced</h2>
 
-Load an image and get it to move 10 pixels to the let usin the button below<br>
+Load an image and move it 10 pixels to the left using a button below:<br>
 
-<image id="myImage01" src="" style="position:relative; left:0; top:0; width:50; height:50; "><br>
-  
-<input type=button value="Go left" onclick="{
- document.getElementById('myImage01').style.left = '200px'
- document.getElementById('myDiv01').innerHTML = 'It went left'
+<img id="myImage01" src="https://via.placeholder.com/150x150" style="position:relative; left:0; top:0; width:50px; height:50px;"><br>
+
+<input type="button" value="Go left" onclick="{
+ document.getElementById('myImage01').style.left = '10px';
+ document.getElementById('myDiv01').innerHTML = 'It went left';
 }">
-  
-  <div id="myDiv01">...</div>
+
+<div id="myDiv01">...</div>
 
 <html>
   <head>
