@@ -93,6 +93,8 @@ function myCheckHit(){
 <script>
   myCheckHit(); // this checks for collisions
 </script>
+   
+   
 
 
 
@@ -132,4 +134,25 @@ function myCheckHit(){
 <img id="myImg03" src="myImgNew.jpg"  style="position:absolute; width:100px; height:80px; left:500px; top:190px;">
 <img id="myImg04" src="myImgNew.jpg"  style="position:absolute; width:100px; height:80px; left:500px; top:400px;">
 
+// move the enemy towards the player
+function chasePlayer() {
+  const playerX = parseInt(player.style.left);
+  const playerY = parseInt(player.style.top);
+  const enemyX = parseInt(enemy.style.left);
+  const enemyY = parseInt(enemy.style.top);
 
+  if (playerX > enemyX) {
+    enemy.style.left = `${enemyX + 5}px`;
+  } else if (playerX < enemyX) {
+    enemy.style.left = `${enemyX - 5}px`;
+  }
+
+  if (playerY > enemyY) {
+    enemy.style.top = `${enemyY + 5}px`;
+  } else if (playerY < enemyY) {
+    enemy.style.top = `${enemyY - 5}px`;
+  }
+}
+
+// update the enemy's position every 50 milliseconds
+setInterval(chasePlayer, 50);
