@@ -1,6 +1,4 @@
 
-
-
 <script>
 
    // global variables here
@@ -82,9 +80,15 @@ function myCheckHit(){
    if (event.key == 's') {   // s = go down
       document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
    }  
-
-   // put more here
-
+                                                                                                                     
+   if (event.key == 'w') {   // w = go up
+      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
+   }
+                                                                                                                     
+     if (event.key == 'a') {   // a = go left
+      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
+   }  
+  
 
 
   myCheckHit()     // checks for all collisions
@@ -94,7 +98,7 @@ function myCheckHit(){
 
 
 
-<h1 align=center><font color=Yellow>T4A05 Template with WASD by Fred</font></h1>
+<h1 align=center><font color=Black>T4A05 Template with WASD by Mohid</font></h1>
 
 <input id="myText01" type=text value="" size=50 placeholder="Feedback here"><br>
 
