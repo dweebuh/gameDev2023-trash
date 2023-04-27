@@ -60,40 +60,6 @@ function myCheckHit(){
    }
 
    // more if statements here
-	<script>
-		let mainSprite = document.getElementById("main-sprite");
-		let chasingSprite = document.getElementById("chasing-sprite");
-
-		function chase() {
-			let mainX = parseInt(mainSprite.style.left);
-			let mainY = parseInt(mainSprite.style.top);
-			let chasingX = parseInt(chasingSprite.style.left);
-			let chasingY = parseInt(chasingSprite.style.top);
-
-			let dx = mainX - chasingX;
-			let dy = mainY - chasingY;
-			let distance = Math.sqrt(dx * dx + dy * dy);
-
-			let speed = 5;
-			let vx = speed * dx / distance;
-			let vy = speed * dy / distance;
-
-			chasingX += vx;
-			chasingY += vy;
-
-			chasingSprite.style.left = chasingX + "px";
-			chasingSprite.style.top = chasingY + "px";
-
-			requestAnimationFrame(chase);
-		}
-
-		chase();
-	
-}
-	</script>
-
-
-
 
 
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="myBackground01.jpg" onkeydown="{
