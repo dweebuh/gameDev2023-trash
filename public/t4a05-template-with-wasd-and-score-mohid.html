@@ -54,26 +54,4 @@
   <img id="myImg01" src="myImgNew.jpg" style="position:absolute; width:100px; height:80px; left: 50px; top:190px;"> 
   <img id="myImg02" src="Portal.png" style="position:absolute; width:500px; height:500px; left:1100px; top:155px;">
 
-  <script> // Collision Code
-      let myGlobalX = 0;
-    let myClock;
-    let myScore = 10;
 
-function myHitOther(my1, my2) {
-  let x1 = parseInt(document.getElementById(my1).style.left);
-  let y1 = parseInt(document.getElementById(my1).style.top);
-  let w1 = parseInt(document.getElementById(my1).style.width);
-  let h1 = parseInt(document.getElementById(my1).style.height);
-
-  let x2 = parseInt(document.getElementById(my2).style.left);
-  let y2 = parseInt(document.getElementById(my2).style.top);
-  let w2 = parseInt(document.getElementById(my2).style.width);
-  let h2 = parseInt(document.getElementById(my2).style.height);
-
-  if (x1 + w1 > x2 && x1 < x2 + w2 && y1 + h1 > y2 && y1 < y2 + h2) {
-    alert("HIT!");
-    myScore -= 1;
-    document.getElementById('myScore01').innerHTML = "Score: " + myScore;
-  }
-}
-  
