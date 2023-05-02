@@ -84,24 +84,17 @@ function myHitOther(my1,my2){
 }
 
 
-function myCheckHit(){
-   document.all.myText01.value = myScore  // show the present score
+function myCheckHit() {
+  document.all.myText01.value = myScore; // show the present score
 
-   // YOU WIN and go to next level!
-
-   if ( myHitOther('Piskel Sprite.png','Portal.png') ){
-      document.all.myText01.value = 'You hit myImg04 and you win the game!'  
-       alert('You Win, now go to the next level')
-      document.getElementById('myImg01').style.left = '20px'
-      location = 'https://www.google.ca'
-   }
-
-   // more if statements here
-
+  // Check if the player collides with the portal
+  if (myHitOther('myImg01', 'myImg02')) {
+    document.all.myText01.value = 'You hit the portal and you win the game!';
+    alert('You Win, now go to the next level');
+    document.getElementById('myImg01').style.left = '20px';
+    location = 'https://www.google.ca';
+  }
 }
-
-
 </script>
-
 
 
