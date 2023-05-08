@@ -13,12 +13,12 @@ Version 0.0.1<br>
      // either uncomment
      // clearInterval(myInterval)
      // myInterval = setInterval(function(){
-     //    document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
+     //    document.getElementById('Piskel Sprite.png').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
      //    myCheckHit()
      // } ,20)
 
      // or do the following
-      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 7
+      document.getElementById('Piskel Sprite.png').style.left = parseInt(document.getElementById('myImg01').style.left) + 7
       myCheckHit()
    }
 
@@ -59,7 +59,7 @@ function myHitOther(my1,my2){
 
 
 function myCheckHit(){
-   if ( myHitOther('myImg01','myImg02') ){
+   if ( myHitOther('Piskel Sprite.png','Piskel Sprite.png') ){
        alert('you lose')  
        document.getElementById('myImg01').style.left = '20px'
        location = 't2a13-keydown.html'  // go to your next level
@@ -75,8 +75,8 @@ function myCheckHit(){
 
 </script>
 
-<img id="myImg01" style="position:absolute; width:100px; height:80px; top:0px; left:50px;"  src="myImage01.jpg">
-<img id="myImg02" style="position:absolute; width:100px; height:80px; top:0px; left:250px;" src="myImage02.jpg">
+<img id="Piskel Sprite.png" style="position:absolute; width:100px; height:80px; top:0px; left:50px;"  src="myImage01.jpg">
+<img id="Piskel Sprite.png" style="position:absolute; width:100px; height:80px; top:0px; left:250px;" src="myImage02.jpg">
 
 <input type=button value="Auto Background Left" onclick="{
   clearInterval(myClock)
